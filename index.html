@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Coins</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <input type="text" id="searchInput" placeholder="Search by Name or Symbol" onkeyup="search()">
+            <button onclick="fetchDataThen()">Render by fetch.then</button>
+            <button onclick="fetchDataAsync()">Render by async Await</button>
+            <button onclick="sortByCap()">Sort by Mkt Cap</button>
+            <button onclick="sortByPercentage()">Sort by Percentage</button>
+            
+        </div>
+        <table id="tableBody">
+            
+        </table>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
